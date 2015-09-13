@@ -1,0 +1,33 @@
+module.exports.actual = [
+  '7f8e81 _ZN2v88internal8CodeStub24GenerateStubsAheadOfTimeEPNS0_7IsolateE ()',
+  '564bb0 _ZN2v88internal4Heap20CreateInitialObjectsEv ()',
+  '579450 _ZN2v88internal4Heap17CreateHeapObjectsEv ()',
+  '68b1d3 _ZN2v88internal7Isolate4InitEPNS0_12DeserializerE ()',
+  '7e49ae _ZN2v86Locker10InitializeEPNS_7IsolateE ()',
+  '89e718 _ZN4node5StartEiPPc ()',
+  ' 21b45 __libc_start_main ()',
+  '6a3b24 _ZN2v88internal9LiveRange14AddUseIntervalENS0_16LifetimePositionES2_PNS0_4ZoneE ()',
+  '6a9489 _ZN2v88internal10LAllocator19ProcessInstructionsEPNS0_11HBasicBlockEPNS0_9BitVectorE ()',
+  '6aa45f _ZN2v88internal10LAllocator15BuildLiveRangesEv ()',
+  '6ad25a _ZN2v88internal10LAllocator8AllocateEPNS0_6LChunkE ()',
+  '6b070a _ZN2v88internal6LChunk8NewChunkEPNS0_6HGraphE ()',
+  '4570bf _ZN2v88internalL13OptimizeGraphEPNS0_6HGraphE ()',
+  '45a8ad _ZN2v88internalL14DoGenerateCodeINS0_14BinaryOpICStubEEENS0_6HandleINS0_4CodeEEEPT_ ()',
+];
+
+module.exports.expected = [
+  '7f8e81 v8::internal::CodeStub::GenerateStubsAheadOfTime(v8::internal::Isolate*) ()',
+  '564bb0 v8::internal::Heap::CreateInitialObjects() ()',
+  '579450 v8::internal::Heap::CreateHeapObjects() ()',
+  '68b1d3 v8::internal::Isolate::Init(v8::internal::Deserializer*) ()',
+  '7e49ae v8::Locker::Initialize(v8::Isolate*) ()',
+  '89e718 node::Start(int, char**) ()',
+  ' 21b45 __libc_start_main ()',
+  '6a3b24 v8::internal::LiveRange::AddUseInterval(v8::internal::LifetimePosition, v8::internal::LifetimePosition, v8::internal::Zone*) ()',
+  '6a9489 v8::internal::LAllocator::ProcessInstructions(v8::internal::HBasicBlock*, v8::internal::BitVector*) ()',
+  '6aa45f v8::internal::LAllocator::BuildLiveRanges() ()',
+  '6ad25a v8::internal::LAllocator::Allocate(v8::internal::LChunk*) ()',
+  '6b070a v8::internal::LChunk::NewChunk(v8::internal::HGraph*) ()',
+  '4570bf v8::internal::OptimizeGraph(v8::internal::HGraph*) ()',
+  '45a8ad v8::internal::Handle<v8::internal::Code> v8::internal::DoGenerateCode<v8::internal::BinaryOpICStub>(v8::internal::BinaryOpICStub*) ()',
+];
